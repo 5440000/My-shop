@@ -21,20 +21,20 @@ function _createModal(options) {
         </div>
       </div>
     `
-  )
-  document.body.appendChild(modal)
-  return modal
+  );
+  document.body.appendChild(modal);
+  return modal;
 }
 
 $.modal = function (options) {
-    const $modal = _createModal(options);
+  const $modal = _createModal(options);
 
   return {
     open() {
-        $modal.classList.add('open')
+      $modal.classList.add("open");
     },
     close() {
-        $modal.classList.remove('open')
+      $modal.classList.remove("open");
     },
     destroy() {},
   };
